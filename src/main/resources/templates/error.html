@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <!-- Bootstrap core CSS -->
+    <link th:rel="stylesheet" th:href="@{/css/bootstrap.min.css} "/>
+    <title>Process Failed</title>
+</head>
+<body>
+<a th:href="@{/}">Home</a>
+<br><br>
+
+<h3 class="error" th:text="${comments}"></h3>
+<br>
+<h3 class="error" th:text="${message}"></h3>
+
+<script th:src="@{/js/bootstrap.min.js}"></script>
+
+</body>
+</html>
