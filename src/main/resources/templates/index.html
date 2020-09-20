@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>File Service</title>
+    <!-- Bootstrap core CSS -->
+    <link th:rel="stylesheet" th:href="@{/css/bootstrap.min.css} "/>
+
+</head>
+<body>
+<form action="#" th:action="@{/all}" method="get">
+    <label for="path">File Path</label>
+    <input id="path" name="path" type="text" th:value="*{path}" placeholder="File Path">
+
+    <input type="submit" value="List Files">
+</form>
+
+<hr>
+
+<form action="#" th:action="@{/attributes}" method="get">
+    <label for="filePath">File Path</label>
+    <input id="filePath" name="filePath" type="text" th:value="*{filePath}" placeholder="File Path">
+
+    <input type="submit" value="List Attributes">
+</form>
+
+<script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
